@@ -10,10 +10,6 @@ $grijs: #4D4D4F;
 ===============================
 */
 
-html , body {
-	height: 100%;
-}
-
 body {
 	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#bae0f3+3,ffffff+25 */
 	background: #ffffff; /* Old browsers */
@@ -116,7 +112,7 @@ header h2 {
 	flex-basis: 0;
 }
 
-.header-cols .col h3{
+.header-cols .col h3 {
 	font-family: 'Uni Sans';
 	font-size: 18px;
 	color: $geel;
@@ -126,7 +122,7 @@ header h2 {
 	margin-top: 20px;
 }
 
-.header-cols .col p{
+.header-cols .col p {
 	font-family: 'Uni Sans';
 	font-size: 17px;
 	color: $grijs;
@@ -138,6 +134,134 @@ header h2 {
 
 .last-col {
 	border-right: 0px dashed $grijs !important;
+}
+
+/* 
+===============================
+	FORMULIER
+===============================
+*/
+
+.formulier {
+	display: flex;
+	width: 100%;
+	height: 530px;
+	background-image: url("/m3/html/assets/images/form/postkaart.jpg");
+	margin: 50px 0;
+	flex-flow: row;
+
+	-webkit-box-shadow: 0px 0px 30px 5px rgba(50, 50, 50, 0.75);
+	-moz-box-shadow:    0px 0px 30px 5px rgba(50, 50, 50, 0.75);
+	box-shadow:         0px 0px 30px 5px rgba(50, 50, 50, 0.75);
+	padding: 50px;
+}
+
+.formulier form {
+	display: flex;
+	width: 100%;
+	height: 420px;
+	justify-content: space-between;
+	align-content: center;
+}
+
+.formulier .kaart {
+	height: 420px;
+	border-right: 2px solid $geel;
+	flex-basis: 0;
+	flex-grow: 1;
+	padding-right: 25px;
+}
+
+.formulier .kaart h2 {
+	font-family: 'Halo';
+	font-size: 60px;
+	color: $grijs;
+	transform: rotate(-15deg);
+	margin-top: -30px;
+	margin-bottom: 60px;
+}
+
+.formulier .kaart p {
+	font-family: 'Halo';
+	font-size: 36px;
+	color: $grijs;
+	letter-spacing: 2px;
+	display: inline-block;
+	line-height: 48px;
+}
+
+.formulier .kaart h3 {
+	font-family: 'Halo';
+	font-size: 60px;
+	color: $grijs;
+	letter-spacing: 2px;
+	margin-top: 20px;
+	margin-right: 25px;	
+	transform: rotate(-5deg);
+	width: 100%;
+	text-align: right;
+}
+
+.formulier .kaart select {
+	appearance: none;
+	background: none;
+	border: none;
+	font-family: 'Halo';
+	font-size: 36px;
+	color: $geel;
+	border-bottom: dashed 2px $geel;
+	text-align: center;
+	letter-spacing: 2px;
+
+	&:focus {
+		outline: none;
+	}
+}
+
+
+
+.formulier .form {
+	height: 420px;
+	flex-basis: 0;
+	flex-grow: 1;
+	display: flex;
+	flex-flow: column;
+	align-items: center;
+	justify-content: center;
+	padding-left: 25px;
+}
+
+.formulier .form input[type="text"] {
+	width: 100%;
+	border: 0px solid $grijs;
+	border-bottom: 2px solid $grijs;
+	background: none;
+	padding: 7px 0;
+	font-size: 14px;
+	color: $grijs;
+	margin-bottom: 20px;
+
+	&:focus {
+		outline: none;
+	}
+}
+
+.formulier .form input[type="submit"] {
+	font-family: 'Uni Sans';
+	font-size: 18px;
+	border-radius: 0;
+	background: none;
+	border: 2px solid $grijs;
+	color: $grijs;
+	padding: 12px 24px;
+	margin-top: 25px;
+	align-self: flex-start;
+	cursor: pointer;
+
+	&:hover {
+		color: $geel;
+		border: 2px solid $geel;
+	}
 }
 
 /* 
