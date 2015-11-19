@@ -1,0 +1,151 @@
+@import 'imports/reset';
+@import 'imports/mixins';
+
+$geel: #F8AC00;
+$grijs: #4D4D4F;
+
+/* 
+===============================
+	MAIN
+===============================
+*/
+
+html , body {
+	height: 100%;
+}
+
+body {
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#bae0f3+3,ffffff+25 */
+	background: #ffffff; /* Old browsers */
+	background: -moz-linear-gradient(top,  #bae0f3 5%, #ffffff 35%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top,  #bae0f3 5%,#ffffff 35%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom,  #bae0f3 5%,#ffffff 35%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bae0f3', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
+
+}
+
+main {
+	display: block;
+	width: 960px;
+	margin: 0 auto;
+}
+
+/* 
+===============================
+	NAV
+===============================
+*/
+
+nav {
+	height: 60px;
+	background: #ffffff;
+	border-bottom: 4px solid $geel;
+
+	a {
+		font-family: 'Uni Sans';
+		color: $grijs;
+		font-size: 14px;
+		text-decoration: none;
+
+		visibility: hidden;
+
+		&:hover , &:active , &:visited {
+			color: $geel;
+		}
+	}
+}
+
+.inner-nav {
+	width: 100%;
+	height: 60px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+/* 
+===============================
+	HEADER FORM
+===============================
+*/
+
+header {
+	width: 960px;
+	height: 300px;
+	background: #FFFFFF;
+	border: 2px solid $geel;
+	margin-top: 50px;
+	display: flex;
+	flex-flow: column;
+	justify-content: center;
+	align-items: center;
+	padding: 20px 0;
+}
+
+header h2 {
+	color: $grijs;
+	font-family: 'Uni Sans';
+	font-weight: 600;
+	font-size: 24px;
+	letter-spacing: 2px;
+
+	visibility: hidden;
+
+	span {
+		color: $geel;
+	}
+}
+
+.header-cols {
+	display: flex;
+	flex-flow: row;
+	justify-content: space-around;
+	align-items: center;
+	margin-top: 20px;
+}
+
+.header-cols .col {
+	display: flex;
+	flex-flow: column;
+	justify-content: center;
+	align-items: center;
+	border-right: 1px dashed $grijs;
+	height: 216px;
+	padding: 20px;
+	flex-grow: 1;
+	flex-basis: 0;
+}
+
+.header-cols .col h3{
+	font-family: 'Uni Sans';
+	font-size: 18px;
+	color: $geel;
+	letter-spacing: 2px;
+	font-weight: bold;
+	text-transform: uppercase;
+	margin-top: 20px;
+}
+
+.header-cols .col p{
+	font-family: 'Uni Sans';
+	font-size: 17px;
+	color: $grijs;
+	letter-spacing: 1px;
+	margin-top: 10px;
+	text-align: center;
+	line-height: 26px;
+}
+
+.last-col {
+	border-right: 0px dashed $grijs !important;
+}
+
+/* 
+===============================
+	ACTIEF ZETTEN VD FONTS
+===============================
+*/
+
+.wf-active nav a , .wf-active header h2 {
+	visibility: visible;
+}

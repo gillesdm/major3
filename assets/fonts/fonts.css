@@ -1,0 +1,29 @@
+@font-face {
+  font-family: 'Halo';
+  src: url('Halo/halohandletter-webfont.woff');
+  src: url('Halo/halohandletter-webfont.woff2');
+}
+
+@font-face {
+  font-family: 'Uni Sans';
+  font-style: normal;
+  font-weight: normal; /* or 400 */
+  src: url('Uni/uni-sans-regular-webfont.woff');
+  src: url('Uni/uni-sans-regular-webfont.woff2');
+}
+
+@font-face {
+  font-family: 'Uni Sans';
+  font-style: normal;
+  font-weight: 600; /* or 700 */
+  src: url('Uni/uni-sans-semi-bold-webfont.woff');
+  src: url('Uni/uni-sans-semi-bold-webfont.woff2');
+}
+
+@font-face {
+  font-family: 'Uni Sans';
+  font-style: normal;
+  font-weight: bold; /* or 700 */
+  src: url('Uni/uni-sans-heavy-webfont.woff');
+  src: url('Uni/uni-sans-heavy-webfont.woff2');
+}

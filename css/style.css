@@ -1,0 +1,237 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+main {
+  display: block;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+/* 
+===============================
+	MAIN
+===============================
+*/
+html, body {
+  height: 100%;
+}
+
+body {
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#bae0f3+3,ffffff+25 */
+  background: #ffffff;
+  /* Old browsers */
+  /* FF3.6-15 */
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #bae0f3 5%, #ffffff 35%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bae0f3', endColorstr='#ffffff',GradientType=0 );
+  /* IE6-9 */
+}
+
+main {
+  display: block;
+  width: 960px;
+  margin: 0 auto;
+}
+
+/* 
+===============================
+	NAV
+===============================
+*/
+nav {
+  height: 60px;
+  background: #ffffff;
+  border-bottom: 4px solid #F8AC00;
+}
+
+nav a {
+  font-family: 'Uni Sans';
+  color: #4D4D4F;
+  font-size: 14px;
+  text-decoration: none;
+  visibility: hidden;
+}
+
+nav a:hover, nav a:active, nav a:visited {
+  color: #F8AC00;
+}
+
+.inner-nav {
+  width: 100%;
+  height: 60px;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+/* 
+===============================
+	HEADER FORM
+===============================
+*/
+header {
+  width: 960px;
+  height: 300px;
+  background: #FFFFFF;
+  border: 2px solid #F8AC00;
+  margin-top: 50px;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: column;
+  -ms-flex-flow: column;
+  flex-flow: column;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 20px 0;
+}
+
+header h2 {
+  color: #4D4D4F;
+  font-family: 'Uni Sans';
+  font-weight: 600;
+  font-size: 24px;
+  letter-spacing: 2px;
+  visibility: hidden;
+}
+
+header h2 span {
+  color: #F8AC00;
+}
+
+.header-cols {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: row;
+  -ms-flex-flow: row;
+  flex-flow: row;
+  -webkit-justify-content: space-around;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.header-cols .col {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: column;
+  -ms-flex-flow: column;
+  flex-flow: column;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-right: 1px dashed #4D4D4F;
+  height: 216px;
+  padding: 20px;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  -webkit-flex-basis: 0;
+  -ms-flex-preferred-size: 0;
+  flex-basis: 0;
+}
+
+.header-cols .col h3 {
+  font-family: 'Uni Sans';
+  font-size: 18px;
+  color: #F8AC00;
+  letter-spacing: 2px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-top: 20px;
+}
+
+.header-cols .col p {
+  font-family: 'Uni Sans';
+  font-size: 17px;
+  color: #4D4D4F;
+  letter-spacing: 1px;
+  margin-top: 10px;
+  text-align: center;
+  line-height: 26px;
+}
+
+.last-col {
+  border-right: 0px dashed #4D4D4F !important;
+}
+
+/* 
+===============================
+	ACTIEF ZETTEN VD FONTS
+===============================
+*/
+.wf-active nav a, .wf-active header h2 {
+  visibility: visible;
+}
