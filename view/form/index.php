@@ -68,7 +68,7 @@
 						<p>
 							Het is geweldig hier! Ik heb al héél veel
 							
-							<select id="1" required>
+							<select name="optie1" required>
 								<option value=""></option>
 								<option value="cultuur">culturele uitstappen gemaakt!</option>
 								<option value="zon">in de zon gelegen!</option>
@@ -78,7 +78,7 @@
 
 							! Het was echt een goed idee om zo'n 
 
-							<select id="2" required>
+							<select name="optie2" required>
 								<option value=""></option>
 								<option value="kort">korte reis</option>
 								<option value="lang">lange reis</option>
@@ -87,7 +87,7 @@
 
 							te maken. Met 
 
-							<select id="3" required>
+							<select name="optie3" required>
 								<option value=""></option>
 								<option value="vliegtuig">het vliegtuig</option>
 								<option value="trein">de trein</option>
